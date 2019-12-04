@@ -5,18 +5,23 @@ public class TestSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int [] arr = {-78,-6,-90,80,25,20,30,5,10,15,-5,23};
+		//NOTE : Dont run all sorting algos together becoz arr gets sorted with first logic and it won't sort afterwards.
+		int [] arr = {-78,-6,-90,80,25,20,30,5,25,30,10,15,-5,23};
+		//int [] arr = {25,30,10,15,5,23};
+		
 		Sorting bs = new Sorting();
+		
 		int[] a= bs.bubbleSort(arr);
 		
-		int[] b= bs.bubbleSort(arr);
-		System.out.println("Bubble sort output.............................");
-		for(int ele:a)
-         System.out.println(ele+",");
+		//int[] b= bs.selectionSort(arr);
 		
-		System.out.println("Selection sort output.............................");
-		for(int ele:b)
-	         System.out.println(ele+",");
+		//int[] c= bs.quickSort(arr, 0, arr.length-1);
+		System.out.println("Sorting output.............................");
+		
+    	for(int ele:a)
+		 System.out.println(ele+",");
+		
+		
 	}
 
 }
