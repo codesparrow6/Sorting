@@ -94,7 +94,7 @@ public class Sorting {
 	
 	int[] merge(int[] a,int low,int high,int[] temp) {
 
-		if(low >= high)
+		if(low == high)
 			return null;
 		else {
 			int mid = (low+high)/2;
