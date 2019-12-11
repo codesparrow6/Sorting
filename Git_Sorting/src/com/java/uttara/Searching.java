@@ -42,7 +42,7 @@ public class Searching {
 		int mid = (low +high)>>1;
 		if(low > high)
 			return -1;
-		else if((a[mid]==key && mid==low) || (a[mid]==key && a[mid+1]>a[mid])) 
+		else if((a[mid]==key && mid==high) || (a[mid]==key && a[mid+1]>a[mid])) 
 			return mid;
 		else if(a[mid] < key)
 			return lastOccurence(a, mid+1, high, key);
