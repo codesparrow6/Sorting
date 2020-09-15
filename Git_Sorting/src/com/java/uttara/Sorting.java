@@ -129,4 +129,23 @@ public class Sorting {
 		
 	}
 	
+	
+	//Find the maximum value in a given unsorted array by D&C technique...........................................
+	
+	int findMax(int []a,int low,int high) {
+		
+		if(low == high)
+			return a[low];
+		else
+		{
+		int mid=(low+high)>>1;
+		int lMax = findMax(a,low,mid);
+		int rMax = findMax(a,mid+1,high);
+		
+		//return Math.min(lMax, rMax);
+		return Math.max(lMax, rMax);
+		}
+		
+	}
+	
 }
